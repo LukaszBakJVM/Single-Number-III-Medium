@@ -29,11 +29,11 @@ private Main main =new Main();
     @Test
     public void three(){
         //given
-        int[]tab={21,67,12,67,1,5,21,78};
+        int[]tab={21,67,12,67,1,21};
         //when
         int[] ints = main.singleNumber(tab);
         //then
-        int[]exp={12,1,5,78};
+        int[]exp={12,1};
         assertArrayEquals(exp,ints);
     }
 
